@@ -9,7 +9,7 @@ A Verilog implementation of a 1 KB direct-mapped cache controller with a main-me
 
 | Deliverable | Location |
 |---|---|
-[IEEE Project Report](report/IEEE_Project_Report.pdf)
+|Report|[IEEE Project Report](report/IEEE_Project_Report.pdf)|
 | Prototype demo video (under 5 minutes) | VIDEO_LINK_HERE |
 | Verilog implementation | [rtl/](rtl/) |
 | Testbenches | [testbench/](testbench/) |
