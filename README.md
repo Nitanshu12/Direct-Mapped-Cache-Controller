@@ -22,9 +22,9 @@ A Verilog implementation of a 1 KB direct-mapped cache controller with a main-me
 |---|---|---|---|
 | Riya Garg | 2401010389 | riyaseema80 | Base RTL design and integration, cache controller FSM, base testbench, FSM and block diagrams, report, repository |
 | Vanshika Yadav | 2401010496 | Sung Jin-woo | 1 KB random trace, comparator fault-injection test, simulation output, results analysis |
-| Nitanshu Goyal | 2401010304 | Krish Garg | Unit testbenches for address decoder, tag comparator, tag and valid RAMs; datapath notes |
-| Krish Garg | 2401020097 | mishti | Unit testbenches for data RAM and main memory; memory read-latency parameter and experiment |
-| Mishti Sharma | 2401010278 | Nitanshu12 | Corner-case testbench, cache parameter analysis, references check |
+| Nitanshu Goyal | 2401010304 | Nitanshu12 | Unit testbenches for address decoder, tag comparator, tag and valid RAMs; datapath notes |
+| Krish Garg | 2401020097 | Krish Garg | Unit testbenches for data RAM and main memory; memory read-latency parameter and experiment |
+| Mishti Sharma | 2401010278 | mishti | Corner-case testbench, cache parameter analysis, references check |
 
 The commit history of every member is visible under *Insights > Contributors* or with `git shortlog -sne`.
 
