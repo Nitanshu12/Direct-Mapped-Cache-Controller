@@ -1,0 +1,7 @@
+MEM_READ_LATENCY = 2
+Requests                  = 72 reads
+Cache design:   misses = 38, total cycles = 440, average = 6.111111
+No-cache design:            total cycles = 288, average = 4.000000
+Speed-up (no-cache / cache) = 0.654545
+RESULT: no-cache is faster
+testbench/tb_compare.v:121: $finish called at 11640000 (1ps)
