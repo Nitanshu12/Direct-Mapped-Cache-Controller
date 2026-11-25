@@ -69,6 +69,7 @@ module cache_top (
     // Cache valid-bit RAM
     cache_valid_ram valid_ram (
         .clk(clk),
+        .reset(reset),
         .index(index),
         .write_valid(1'b1),
         .write_enable(cache_valid_we),
