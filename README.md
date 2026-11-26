@@ -24,7 +24,7 @@ A Verilog implementation of a 1 KB direct-mapped cache controller with a main-me
 | Six memory-access traces and trace-driven study | [traces/](traces/), [documentation/trace_analysis.md](documentation/trace_analysis.md) |
 | Cache versus no-cache baseline | [rtl/nocache_top.v](rtl/nocache_top.v), [documentation/baseline_comparison.md](documentation/baseline_comparison.md) |
 | FPGA synthesis and timing | [synth/](synth/), [documentation/synthesis_report.md](documentation/synthesis_report.md) |
-| Final IEEE project report (Phase II) | submitted separately |
+| Final IEEE project report (Phase II) | [report/Cache_Controller_IEEE_Report_Phase2.pdf](report/Cache_Controller_IEEE_Report_Phase2.pdf) |
 
 ## Team
 
@@ -162,7 +162,8 @@ State values are hexadecimal. The waveform shows a read miss at `0x10` (7 cycles
 │   ├── baseline_comparison.md   (Phase II)
 │   └── synthesis_report.md      (Phase II)
 └── report/
-    └── Cache_Controller_IEEE_Report.pdf   (Phase I)
+    ├── Cache_Controller_IEEE_Report.pdf         (Phase I)
+    └── Cache_Controller_IEEE_Report_Phase2.pdf  (Phase II)
 ```
 
 ## How to run
