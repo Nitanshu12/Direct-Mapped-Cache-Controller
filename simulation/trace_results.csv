@@ -1,0 +1,7 @@
+trace,requests,reads,writes,read_hits,hit_rate_percent,amat_cycles
+sequential,64,64,0,48,75.000000,4.750000
+conflict,40,40,0,0,0.000000,7.000000
+loop_1_5kb,384,384,0,96,25.000000,6.250000
+random_1kb,200,200,0,139,69.500000,4.915000
+random_4kb,200,200,0,40,20.000000,6.400000
+mixed_rw,200,123,77,40,32.520325,6.024390
