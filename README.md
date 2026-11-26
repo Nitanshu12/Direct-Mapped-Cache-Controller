@@ -3,7 +3,7 @@
 **Modern Computer Architecture | B.Tech (CS&AI) | Rishihood University**
 **Project 6 | Phase I and Phase II submission**
 
-A Verilog implementation of a 1 KB direct-mapped cache controller with a main-memory model, a self-checking testbench, simulation results and an IEEE project report. Phase II adds a valid-bit reset, a trace-driven performance study, a cache versus no-cache comparison and FPGA synthesis results (898 logic cells, 18 block RAMs, 134.59 MHz on an iCE40 HX8K).
+A Verilog implementation of a 1 KB direct-mapped cache controller with a main-memory model, a self-checking testbench, simulation results and an IEEE project report. Phase II adds a valid-bit reset, a trace-driven performance study, a cache versus no-cache comparison and FPGA synthesis results (the timing design with cache, memory model and wrapper uses 898 logic cells and 18 block RAMs, at 134.59 MHz on an iCE40 HX8K).
 
 ## Phase I deliverables
 
@@ -302,7 +302,7 @@ Cache total = 364 + 38 L cycles, no-cache total = 144 + 72 L cycles, so the two 
 
 ## FPGA synthesis (Phase II)
 
-Target: Lattice iCE40 HX8K, open-source flow (Yosys and nextpnr), 25 MHz target clock. A wrapper with registers around the cache is used for timing, because `cache_top` has more than 300 I/O pins.
+Target: Lattice iCE40 HX8K, open-source flow (Yosys and nextpnr), 25 MHz target clock. A wrapper with registers around the cache is used for timing, because `cache_top` has 294 I/O pins (164 inputs, 130 outputs) and the FPGA package has only 206.
 
 | Module | Cells | LUT4 | Flip-flops | Block RAM |
 |---|---:|---:|---:|---:|
@@ -316,7 +316,7 @@ Target: Lattice iCE40 HX8K, open-source flow (Yosys and nextpnr), 25 MHz target 
 | main_memory (simulation model) | 444 | 153 | 277 | 8 |
 | **Total** | **1191** | **632** | **535** | **18** |
 
-After place and route: **898 / 7680 logic cells (11%)**, **18 / 32 block RAMs (56%)**, estimated maximum frequency **134.59 MHz**. The main memory is a simulation model, so its cells are not part of the cache. The numbers belong to the iCE40 family and to these tool versions. Details: [documentation/synthesis_report.md](documentation/synthesis_report.md).
+After place and route: **898 / 7680 logic cells (11%)**, **18 / 32 block RAMs (56%)**, estimated maximum frequency **134.59 MHz**. The 898 logic cells are for the whole timing design (cache, main-memory model and timing wrapper), so the cache alone is smaller. The main memory is a simulation model, so its cells are not part of the cache. The numbers belong to the iCE40 family and to these tool versions. Details: [documentation/synthesis_report.md](documentation/synthesis_report.md).
 
 ## Limitations
 
